@@ -35,20 +35,21 @@ class ViewController: UIViewController {
     
     func transaction (from:String,to:String,amount:Int, type:String){
         //Some checks before validate the transaction
-        guard let account = accounts[from] else{
-            return
+        if let account = accounts[from] {
+            if account - amount < 0 {
+                return
+            }else{
+                // validate the transaction
+            accounts.updateValue(account - amount, forKey: from)
+            }
         }
-        if account - amount < 0 {
-            return
-        }
-        // validate the transaction
-        accounts.updateValue(account - amount, forKey: from)
         // Now change the receiver account
-        guard let accountTo = accounts[to] else{
+        if let accountTo = accounts[to] {
+            accounts.updateValue(accountTo + amount, forKey: to)
+        }else{
             accounts[to] = amount
-            return
         }
-        accounts.updateValue(accountTo + amount, forKey: to)
+        
         // Now add block to our blockchain
         if type == "genesis" {
             bitcoinChain.createInitialBlock(data: "from : \(from) to: \(to)")
