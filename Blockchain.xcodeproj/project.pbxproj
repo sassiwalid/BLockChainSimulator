@@ -13,6 +13,8 @@
 		A9EC0CB22347DD230070C12A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EC0CB02347DD230070C12A /* Main.storyboard */; };
 		A9EC0CB42347DD240070C12A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EC0CB32347DD240070C12A /* Assets.xcassets */; };
 		A9EC0CB72347DD240070C12A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EC0CB52347DD240070C12A /* LaunchScreen.storyboard */; };
+		A9EC0CBF2347DD980070C12A /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC0CBE2347DD980070C12A /* Block.swift */; };
+		A9EC0CC12347E2450070C12A /* Blockchain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EC0CC02347E2450070C12A /* Blockchain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A9EC0CB32347DD240070C12A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9EC0CB62347DD240070C12A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9EC0CB82347DD240070C12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EC0CBE2347DD980070C12A /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		A9EC0CC02347E2450070C12A /* Blockchain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockchain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				A9EC0CB32347DD240070C12A /* Assets.xcassets */,
 				A9EC0CB52347DD240070C12A /* LaunchScreen.storyboard */,
 				A9EC0CB82347DD240070C12A /* Info.plist */,
+				A9EC0CBE2347DD980070C12A /* Block.swift */,
+				A9EC0CC02347E2450070C12A /* Blockchain.swift */,
 			);
 			path = Blockchain;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EC0CAF2347DD230070C12A /* ViewController.swift in Sources */,
+				A9EC0CBF2347DD980070C12A /* Block.swift in Sources */,
 				A9EC0CAB2347DD230070C12A /* AppDelegate.swift in Sources */,
 				A9EC0CAD2347DD230070C12A /* SceneDelegate.swift in Sources */,
+				A9EC0CC12347E2450070C12A /* Blockchain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
